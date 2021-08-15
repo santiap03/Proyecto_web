@@ -28,18 +28,21 @@
             
             <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark ">
                 
-                <a href="index2.html" class="navbar-brand">RBM</a>
+                <a href="index_main.html" class="navbar-brand">SNB</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
                 <div id="menu" class="collapse navbar-collapse ">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="index2.html">Inicio</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index_main.html">Inicio</a></li>
                         <li class="nav-item "><a class="nav-link text-light" href="index_Motivacion.html">Motivacion</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="index_registro.html">Registro</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="index_libros.html">Base de datos</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="index_sugerencias.html">Sugerencias</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="index_cuenta.html">Mi cuenta</a></li>
+
                     </ul>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
                     <button class="btn btn-primary bg-white text-dark" type="button" data-toggle="modal" data-target="#modal_info">Login</button>
-                    <button class="btn btn-primary bg-white text-dark" type="button" data-toggle="modal" data-target="#modal_info2">Registro</button>
+                    <!-- <button class="btn btn-primary bg-white text-dark" type="button" data-toggle="modal" data-target="#modal_info2">Registro</button>-->
+                    <a class="btn btn-primary bg-white text-dark" href="index_registro.html">Registro</a>
                 </div>
                 <form action="search.html" class="form-inline">
                     <input class="form-control" type="search" name="buscar" placeholder="Buscar">
@@ -71,10 +74,36 @@
 				</div>
 			</div>
 		</div>
-        <!--registro-->
+        
         
         <section>
-            <h2>Titulo principal</h2>
+            <h2>Sistema Nacional De Bibliotecas</h2>
+            <div class="row justify-content-center">
+                <div id="carousel-main" class="carousel slide" data-ride="carousel">
+    
+                    <div class="carousel-inner" style=" width:1000px; height: 500px !important;">
+    
+                        <div class="carousel-item active"><img class="rounded mx-auto d-block" src="https://www.qhubomedellin.com/wp-content/uploads/2020/05/BUNIVERSIDAD-DE-ANTIOQUIA-24.JPG-678x381.jpg" alt="imagen 1"></div>
+                        <div class="carousel-item"><img class="rounded mx-auto d-block" src="https://www.eltiempo.com/files/image_640_428/uploads/2020/07/17/5f11e2ed57141.jpeg" alt="imagen 2"></div>
+                        <div class="carousel-item"><img class="rounded mx-auto d-block" src="https://cr00.epimg.net/radio/imagenes/2018/12/12/medellin/1544616700_508438_1544616980_noticia_normal.jpg" alt="imagen 3"></div>
+                        <div class="carousel-item"><img class="rounded mx-auto d-block" src="https://vivirenelpoblado.com/wp-content/uploads/2020/07/UdeA.-Foto-Hugo-Villegas_2-696x434.jpg" alt="imagen 3"></div>
+                    </div>
+    
+                    <a href="#carousel-main" class="carousel-control-prev " data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#carousel-main" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+    
+                    <ul class="carousel-indicators bg-success">
+                        <li data-target="#carousel-main" class="active" data-slide-to=0></li>
+                        <li data-target="#carousel-main" data-slide-to=1></li>
+                        <li data-target="#carousel-main" data-slide-to=2></li>
+                        <li data-target="#carousel-main" data-slide-to=3></li>
+                    </ul>
+                </div>
+            </div>
             <article>
                 <h3 >titulo 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
