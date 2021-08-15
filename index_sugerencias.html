@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" manifest="data.appache">
+    <head>
+        <!--Datos de la pagina -->
+        <title>Segunda pagina</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Santiago y Laura">
+        <meta name="keywords" content="Biblioteca">
+        <meta http-equiv="refresh" content="500"> 
+        <link rel="stylesheet" type="text/css" href="css/estilo_registro.css">
+    </head>
+    <body>
+        <form action="index_main.html" method="post" target="_blank" enctype="multipart/form-data">
+            <h1>Quejas y sugerencias</h1>
+            <fieldset>
+                <legend>Datos basicos</legend><!--Datos personales -->
+                <label>Nombre: </label><br><input type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br><br>
+                <label>Email: </label><input type="email" name="correo" placeholder="corrre electronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="nombre@gmail.com" required><br><br>
+                <label>Descripcion:</label><br>
+			    <textarea name="Descripcion" rows="5" cols="50" maxlength="500" placeholder="Ingrese hasta 500 caracteres"></textarea><br><br>
+                            
+                <label>Anexo : </label><input type="file" name="foto"><br><br>
+                <legend>Su queja sera atendida en un plazo de entre 7 y 14 años</legend>
+
+
+            <br>
+            <input type="submit" name="enviar" value="Enviar" >
+        </form>
+    </body>
+</html>
