@@ -7,7 +7,7 @@
             <meta name="author" content="Santiago y Laura">
             <meta name="keywords" content="Biblioteca">
             <meta http-equiv="refresh" content="500"> 
-            <link rel="stylesheet" type="text/css" href="css/estilo_main.css">
+            <!--<link rel="stylesheet" type="text/css" href="css/estilo_main.css">-->
           
             <!--Bootstrap CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -24,6 +24,7 @@
                 }
                 .form-control{
                     border-radius:1rem;
+                    margin-right: 5px;
                 }
             </style>
      
@@ -87,22 +88,20 @@
                 <div class="row">
                     <legend>Datos basicos</legend><!--Datos personales -->
                     <fieldset class="col-6">
-                        
                         <label class="form-label" for="loginPassword">Nombre: </label>
-                            <input id= "rname" class="form-control" type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br>
-                            
-                            <select name="Documento" class="select" >
-                                <option >Cedula</option>
-                                <option >Pasaporte</option>
-                                <option >Tarjeta de identidad</option>
-                                <option >Otro</option>
-                            </select> <br>
-                            <input class="form-control"  type="text" name="ID" size="50" maxlength="10" placeholder="ingrese Identificacion" title="Ej: 999999999" pattern="[0-9]+" ><br>
-                            <label class="form-label">Edad: </label><input class="form-control" type="number" name="edad" size="3" min="0" maxlength="3"><br>
-                            <label>Genero</label>
-                            <input type="radio" name="genero" value="1" required>Masculino
-                            <input type="radio" name="genero" value="2">Femenino
-                            <input type="radio" name="genero" value="3">Otro <br>
+                        <input id= "rname" class="form-control" type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br>
+                        <select name="Documento" class="select" >
+                            <option >Cedula</option>
+                            <option >Pasaporte</option>
+                            <option >Tarjeta de identidad</option>
+                            <option >Otro</option>
+                        </select> <br>
+                        <input class="form-control"  type="text" name="ID" size="50" maxlength="10" placeholder="ingrese Identificacion" title="Ej: 999999999" pattern="[0-9]+" ><br>
+                        <label class="form-label">Edad: </label><input class="form-control" type="number" name="edad" size="3" min="0" maxlength="3"><br>
+                        <label>Genero</label>
+                        <input type="radio" name="genero" value="1" required>Masculino
+                        <input type="radio" name="genero" value="2">Femenino
+                        <input type="radio" name="genero" value="3">Otro <br>
                     </fieldset>
                     <div class="col-6">
                             
@@ -116,7 +115,7 @@
                                     <input type="file" class="custom-file-input" id="foto" required>
                                     <label class="custom-file-label" for="validatedCustomFile">Buscar archivo...</label>
                                     <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                  </div>
+                                </div>
                             </div>
                             <div class="col-3">
                                 <label class="form-label" for="ptype">Perfil publico: </label> 
@@ -158,7 +157,7 @@
                         <br>
                     </div>
                     <input class="btn btn-success" type="submit" name="enviar" value="Enviar" >
-                    <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    <a class="btn btn-danger " data-dismiss="modal" href="index_main.html">Cerrar</a>
                     
                 </fieldset>
                 
@@ -166,6 +165,6 @@
             </div>
         </form>
         <br>
-
+    </div>
     </body>
 </html>

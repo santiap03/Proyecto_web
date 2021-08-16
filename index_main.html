@@ -19,6 +19,10 @@
             *{
                 border: 1px solid;
             }
+            .form-control{
+                    border-radius:1rem;
+                    margin-right: 5px;
+                }
         </style>
  
     </head>
@@ -49,92 +53,95 @@
                     <button class="btn btn-success" type="button" onclick="search()">Buscar</button>
                 <!--</form>-->
             </nav><br><br><br>
-        <!--------->
+            <!--------->
             <!--login-->
-		<div class="modal fade" id="modal_info">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<!-- header -->
-					<div class="modal-header">
-						<h4 class="modal-title text-center">Ingreso</h4>
-						<button class="close" data-dismiss="modal">&times;</button>
-					</div>
+            <div class="modal fade" id="modal_info">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title text-center">Ingreso</h4>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
 	
-					<!-- body -->
-					<div class="modal-body">
-						<label>usuario: </label><input type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br><br>
-						<label>Contraseña:</label><Input type="password" name="pass" placeholder="A,b,c,1,2,3,4" title="Contraseña de la cuenta" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"></Input><br>
-						<button class="btn btn-primary" data-dismiss="modal">Login</button>
-                        <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-					</div>
+                        <!-- body -->
+                        <div class="modal-body">
+                            <label>usuario: </label><input type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br><br>
+                            <label>Contraseña:</label><Input type="password" name="pass" placeholder="A,b,c,1,2,3,4" title="Contraseña de la cuenta" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"></Input><br>
+                            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+                            <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        </div>
                     
 					<!-- footerr -->
-					<div class="modal-footer">
-						<p class="text-left">Datos tratados bajo politica de seguridad</p>
-					</div>
-				</div>
-			</div>
-		</div>
-        <!---->
-        <!--Content-->
-        <section>
-            <h2>Sistema Nacional De Bibliotecas</h2>
-            <div class="row justify-content-center ">
-                <div id="carousel-main" class="carousel slide" data-ride="carousel">
-    
-                    <div class="carousel-inner" style=" width:1000px; height: 600px !important;">
-    
-                        <div class="carousel-item active"><img class="rounded mx-auto d-block" src="img/1 (2).jpg" alt="imagen 1"></div>
-                        <div class="carousel-item"><img class="rounded mx-auto d-block" src="img/3.jpg" alt="imagen 2"></div>
-                        <div class="carousel-item"><img class="rounded mx-auto d-block" src="https://cr00.epimg.net/radio/imagenes/2018/12/12/medellin/1544616700_508438_1544616980_noticia_normal.jpg" alt="imagen 3"></div>
-                        <div class="carousel-item"><img class="rounded mx-auto d-block" src="img/4.jpg" alt="imagen 3"></div>
-                    </div>
-    
-                    <a href="#carousel-main" class="carousel-control-prev " data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a href="#carousel-main" class="carousel-control-next" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-    
-                    <ul class="carousel-indicators ">
-                        <li data-target="#carousel-main" class="active" data-slide-to=0></li>
-                        <li data-target="#carousel-main" data-slide-to=1></li>
-                        <li data-target="#carousel-main" data-slide-to=2></li>
-                        <li data-target="#carousel-main" data-slide-to=3></li>
-                    </ul>
-                </div>
-            </div>
-            <article>
-                <h3 class="text-light bg-dark">Mision</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
-    
-            <article>
-                <h3 class="text-light bg-dark" >Publico</h3>
-                <p>Lorem ipsu	m dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
-            <article>
-                <h3 class="text-light bg-dark" >Cuentas</h3>
-                <p>Registrese con nosotros para obtener la ultima informacion acerca de lanzamientos, autores,
-                    eventos y noticas relacionadas. Si no esta registrado haga clic <a class="badge badge-dark" href="index_registro.html">aqui</a>.
-                </p>
-            </article>
-        </section>
+                        <div class="modal-footer">
+                            <p class="text-left">Datos tratados bajo politica de seguridad</p>
+                        </div>
+                    
+				    </div>
+			    </div>
+            
+		   </div>
+            <!---->
+            <!--Content-->
+            <section>
+                <h2>Sistema Nacional De Bibliotecas</h2>
+                <div class="row justify-content-center ">
+                    <div id="carousel-main" class="carousel slide" data-ride="carousel">
         
-        <footer>
-            <h4>Contacto</h4>
-            <p>correo@email.com</p>
-        </footer>
+                        <div class="carousel-inner" style=" width:1000px; height: 600px !important;">
+        
+                            <div class="carousel-item active"><img class="rounded mx-auto d-block" src="img/1 (2).jpg" alt="imagen 1"></div>
+                            <div class="carousel-item"><img class="rounded mx-auto d-block" src="img/3.jpg" alt="imagen 2"></div>
+                            <div class="carousel-item"><img class="rounded mx-auto d-block" src="https://cr00.epimg.net/radio/imagenes/2018/12/12/medellin/1544616700_508438_1544616980_noticia_normal.jpg" alt="imagen 3"></div>
+                            <div class="carousel-item"><img class="rounded mx-auto d-block" src="img/4.jpg" alt="imagen 3"></div>
+                        </div>
+        
+                        <a href="#carousel-main" class="carousel-control-prev " data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#carousel-main" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+        
+                        <ul class="carousel-indicators ">
+                            <li data-target="#carousel-main" class="active" data-slide-to=0></li>
+                            <li data-target="#carousel-main" data-slide-to=1></li>
+                            <li data-target="#carousel-main" data-slide-to=2></li>
+                            <li data-target="#carousel-main" data-slide-to=3></li>
+                        </ul>
+                    </div>
+                </div>
+                <article>
+                    <h3 class="text-light bg-dark">Mision</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+        
+                <article>
+                    <h3 class="text-light bg-dark" >Publico</h3>
+                    <p>Lorem ipsu	m dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+                <article>
+                    <h3 class="text-light bg-dark" >Cuentas</h3>
+                    <p>Registrese con nosotros para obtener la ultima informacion acerca de lanzamientos, autores,
+                        eventos y noticas relacionadas. Si no esta registrado haga clic <a class="badge badge-dark" href="index_registro.html">aqui</a>.
+                    </p>
+                </article>
+            </section>
+        
+            <footer>
+                <h4>Contacto</h4>
+                <p>correo@email.com</p>
+            </footer>
+        </div>
     </body>
     </html>
