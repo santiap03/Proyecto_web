@@ -6,7 +6,7 @@
             <meta charset="utf-8">
             <meta name="author" content="Santiago y Laura">
             <meta name="keywords" content="Biblioteca">
-            <meta http-equiv="refresh" content="65"> 
+            <meta http-equiv="refresh" content="5"> 
             <link rel="stylesheet" type="text/css" href="css/estilo_main.css">
           
             <!--Bootstrap CSS -->
@@ -20,6 +20,9 @@
             <style type="text/css">
                 *{
                     border: 1px solid;
+                }
+                .form-control{
+                    border-radius:1rem;
                 }
             </style>
      
@@ -69,72 +72,69 @@
                         <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
 					</div>
                     
-					<!-- footerr -->
+					<!-- footer -->
 					<div class="modal-footer">
 						<p class="text-left">Datos tratados bajo politica de seguridad</p>
 					</div>
 				</div>
 			</div>
 		</div>
+        
+        <!-- Form -->    
         <form action="index_main.html" method="post" target="_blank" enctype="multipart/form-data">
-            
-            <form action="index_main.html" method="post" target="_blank" enctype="multipart/form-data">
-                <fieldset>
+            <div class="container">
+                <div class="row">
                     <legend>Datos basicos</legend><!--Datos personales -->
-                    <div class="form-outline mb-4">
+                    <fieldset class="col-6">
+                        
                         <label class="form-label" for="loginPassword">Nombre: </label>
-                        <input id= "rname" class="form-control" type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br>
-                        <select name="Documento" class="select" >
-                            <option >Cedula</option>
-                            <option >Pasaporte</option>
-                            <option >Tarjeta de identidad</option>
-                            <option >Otro</option>
-                        </select> <br>
-                        <input class="form-control" type="text" name="ID" size="50" maxlength="10" placeholder="ingrese Identificacion" title="Ej: 999999999" pattern="{10}" ><br>
+                            <input id= "rname" class="form-control" type="text" name="Nombre" size="50" maxlength="30" placeholder="ingrese nombre" title="Ej: pepito perez perez"  ><br>
+                            
+                            <select name="Documento" class="select" >
+                                <option >Cedula</option>
+                                <option >Pasaporte</option>
+                                <option >Tarjeta de identidad</option>
+                                <option >Otro</option>
+                            </select> <br>
+                            <input class="form-control"  type="text" name="ID" size="50" maxlength="10" placeholder="ingrese Identificacion" title="Ej: 999999999" pattern="[0-9]+" ><br>
+                            <label class="form-label">Edad: </label><input class="form-control" type="number" name="edad" size="3" min="0" maxlength="3"><br>
+                            <label>Genero</label>
+                            <input type="radio" name="genero" value="1" required>Masculino
+                            <input type="radio" name="genero" value="2">Femenino
+                            <input type="radio" name="genero" value="3">Otro <br>
+                    </fieldset>
+                    <div class="col-6">
+                            
                         <label class="form-label">Descripcion:</label><br>
-                        <textarea class="form-control" name="Descripcion" rows="5" cols="50" maxlength="500" placeholder="Ingrese una descripcion para los demas Usuarios "></textarea><br><br>
-                        <label class="form-label">Edad: </label><input type="number" name="edad" size="3" min="0" maxlength="3"><br><br>            
-                        <label class="form-label">Foto : </label><input type="file" name="foto"><br><br>
-
-                        <label class="form-label" for="ptype">Perfil publico: </label> <input type="checkbox" name="Publico" value="1" class="form-check" id="ptype"><br>
-                        
-                        <label class="form-label">Genero</label><br>
-                        <input class="form-check-input" type="radio" name="genero" value="1" required>Masculino<br>
-                        <input class="form-check-input" type="radio" name="genero" value="2">Femenino<br>
-                        
-                        <input type="radio" name="genero" value="3">Otro<br>
-                        <label class="form-label">Email: </label><input type="email" name="correo" placeholder="corrre electronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="nombre@gmail.com" required><br><br>
-                        <label class="form-label">Contraseña</label><Input type="password" name="pass" placeholder="A,b,c,1,2,3,4" title="Contraseña de la cuenta" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"></Input><br>
-                        <label class="form-label"> Gastos en libros</label>
-                        <select name="tax" >
-                            <option >4%</option>
-                            <option >7%</option>
-                            <option >16%</option>
-                            <option >25%</option>
-                        </select><br>
-                        <label class="form-label">Descripcion:</label><br>
-                        <textarea name="Descripcion" rows="5" cols="50" maxlength="500" placeholder="Ingrese una descripcion para los demas Usuarios "></textarea><br><br>
-                        <label>Edad: </label><input type="number" name="edad" size="3" min="0" maxlength="3"><br><br>            
-                        <label>Foto : </label><input type="file" name="foto"><br><br>
-                        <input type="checkbox" name="Publico" value="1">Perfil publico<br>
-                        <label>Genero</label><br>
-                        <input type="radio" name="genero" value="1" required>Masculino<br>
-                        <input type="radio" name="genero" value="2">Femenino<br>
-                        <input type="radio" name="genero" value="3">Otro<br>
-                        <label>Email: </label><input type="email" name="correo" placeholder="corrre electronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="nombre@gmail.com" required><br><br>
-                        <label>Contraseña</label><Input type="password" name="pass" placeholder="A,b,c,1,2,3,4" title="Contraseña de la cuenta" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"></Input><br>
-                        <label> "Gastos en libros"</label>
-                        <select name="tax" >
-                            <option >4%</option>
-                            <option >7%</option>
-                            <option >16%</option>
-                            <option >25%</option>
-                        </select>
-                        <br>
-                        
+                        <textarea class="form-control" name="Descripcion" rows="5" cols="50" maxlength="500" placeholder="Ingrese una descripcion para los demas Usuarios "></textarea><br>
+                                    
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="form-label" for="foto">Foto :</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="foto" required>
+                                    <label class="custom-file-label" for="validatedCustomFile">Buscar archivo...</label>
+                                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                  </div>
+                            </div>
+                            <div class="col-3">
+                                <label class="form-label" for="ptype">Perfil publico: </label> 
+                                <input type="checkbox" name="Publico" value="1" class="form-check" id="ptype"><br>
+                            </div>
+                        </div>             
                     </div>
-                    
-                </fieldset>
+                </div>
+                <div class="row">
+
+                        <div class="col-6">
+                            <h4>Seguridad</h4>
+                            <label class="form-label">Email: </label><input class="form-control" type="email" name="correo" placeholder="corrre electronico" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="nombre@gmail.com" required><br>
+                            <label class="form-label">Contraseña</label><Input class="form-control" type="password" name="pass" placeholder="A,b,c,1,2,3,4" title="Contraseña de la cuenta" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"></Input><br>
+
+                        </div>
+    
+                </div>
+
                 <fieldset><!--Opciones adicionales -->
                     <div class="form-outline mb-4">
                         <legend>Datos de gustos</legend>
@@ -147,15 +147,24 @@
                         <input type="checkbox" name="Temas" value="6">Ciencia Ficcion
                         <br><br>
                         <label >Libros leidos por año</label><input type="number" name="Nbooks" size="10" maxlength="15" placeholder="0,1,2,3...." min="0" max="200" title="Libros"><!-- -->
+                        <label> "Usted es un lector:"</label>
+                        <select name="tax" class="custom-select" style="width: 200px;">
+                            <option >Nunca</option>
+                            <option >Ocasional</option>
+                            <option >Usual</option>
+                            <option >Dedicado</option>
+                        </select>
+                        <br>
                     </div>
-                    <input class="btn btn-danger" type="submit" name="enviar" value="Enviar" >
+                    <input class="btn btn-success" type="submit" name="enviar" value="Enviar" >
                     <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    
                 </fieldset>
                 
                 
-            </form>
-            <br>
-            <input type="submit" name="enviar" value="Enviar" >
+            </div>
         </form>
+        <br>
+
     </body>
 </html>
